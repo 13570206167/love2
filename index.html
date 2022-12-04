@@ -2,17 +2,19 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Our Story of &amp; love</title>
         <link type="text/css" rel="stylesheet" href="story/default.css">
-	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="story/jquery.js"></script>
 		<script type="text/javascript" src="story/jscex.js"></script>
-		<script type="text/javascript" src="./story/jscex-parser.js"></script>
-		<script type="text/javascript" src="./story/jscex-jit.js"></script>
-		<script type="text/javascript" src="./story/jscex-builderbase.js"></script>
-		<script type="text/javascript" src="./story/jscex-async.js"></script>
-		<script type="text/javascript" src="./story/jscex-async-powerpack.js"></script>
-		<script type="text/javascript" src="./story/functions.js" charset="utf-8"></script>
-		<script type="text/javascript" src="./story/love.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="story/jscex-parser.js"></script>
+		<script type="text/javascript" src="story/jscex-jit.js"></script>
+		<script type="text/javascript" src="story/jscex-builderbase.js"></script>
+		<script type="text/javascript" src="story/jscex-async.js"></script>
+		<script type="text/javascript" src="story/jscex-async-powerpack.js"></script>
+		<script type="text/javascript" src="story/functions.js" charset="utf-8"></script>
+		<script type="text/javascript" src="story/love.min.js" charset="utf-8"></script>
 	    <style type="text/css">
+<!--
 .STYLE1 {color: #666666}
+-->
         </style>
 </head>
     <body>
@@ -23,8 +25,22 @@
                 <div id="text">
 			        <div id="code">
 			        
-					
-		
+						<span class="say"> </span><br>
+			        	<span class="say"> dear 吴同学 :</a></span><br>
+			<span class="say"> </span><br>
+						<span class="say">很高兴可以认识你。</span><br>
+			<span class="say"> </span><br>
+						<span class="say">一开始以为你是文静，高冷的女孩子。</span><br>
+			<span class="say"> </span><br>
+			        	        <span class="say">但是经过一段时间的认识,</span><br>
+			<span class="say"> </span><br>
+			 <span class="say">我慢慢喜欢上漂亮，可爱，温柔，勤奋，有趣的你。</span><br>
+			<span class="say"> </span><br>
+			        	         <span class="say">我知道我比较笨，不太懂得用语言表达自己。</span><br>
+			<span class="say"> </span><br>
+						 <span class="say">所以我决定给你写一封信。</span><br>
+			<span class="say"> </span><br>
+			        	         <span class="say">你愿意做我的女朋友，</span><br>
 			        	<span class="say">和我一起感受真实的生命，一起享受美好的生活吗？</span><br>
 			<span class="say"> </span><br>
                         <span class="say"><span class="space"><span class="space"></span>         form 方锦平</span>
@@ -32,7 +48,7 @@
 			        </div>
                 </div>
                 <div id="clock-box">
-                    方锦平 <span class="STYLE1"> 与 相识的</span>
+                    方锦平 <span class="STYLE1"> 与 </span>吴绮琳<span class="STYLE1"> 相识的</span>
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -201,19 +217,4 @@
 
         runAsync().start();
     })();
-    var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
-        httpRequest.open('GET', 'https://json.tewx.cn/user/API_kdd531mytfdzm06i?sdAS1dsnuUa3sd=320&Jsdh4bajs99dii=pmdhzh1qig4g0c4y', true);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
-        httpRequest.send();//第三步：发送请求  将请求参数写在URL中
-        /**
-         * 获取数据后的处理程序
-         */
-        httpRequest.onreadystatechange = function () {
-            if (httpRequest.readyState == 4 && httpRequest.status == 200) {
-                var json = httpRequest.responseText;//获取到json字符串，还需解析
-                console.log(json);  
-                var element=document.getElementById("code")
-                var haskell = document.createElement("span");
-                haskell.innerText =  json;
-                element.appendChild(haskell)
-            }}
     </script></body></html>
